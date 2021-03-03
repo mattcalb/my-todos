@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    color: rgb(255, 167, 167, 0.7);
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    width: 500px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: rgb(153, 153, 153);
+}
+
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    input {
+        width: 70%;
+    }
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+    text-align: left;
+    border: none;
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(153, 153, 153);;
+}
+
+ul::-webkit-scrollbar-thumb:active {
+    background-color: rgb(116, 116, 116);
+}
+
+@media only screen and (max-width: 1000px) {
+    ul {
+        width: 70%;
+    }
+}
+
+li {
+    border: 1px solid rgb(219, 219, 219);
+    word-wrap: break-word;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: rgb(255, 167, 167, 0.7);
+    float: right;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+
+.delete-btn:hover {
+    color: rgb(255, 167, 167);
+}
+
+.delete-btn:active {
+    color: rgb(255, 131, 131);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(153, 153, 153);
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(50, 50, 50);
+}
+
+a:active, a:link, a:visited {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
