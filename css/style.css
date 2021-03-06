@@ -37,7 +37,7 @@ input:focus {
 
 @media only screen and (max-width: 1000px) {
     input {
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -53,6 +53,7 @@ ul {
     height: 60vh;
     overflow: hidden;
     overflow-y: scroll;
+    margin-bottom: 50px;
 }
 
 ul::-webkit-scrollbar {
@@ -74,8 +75,8 @@ ul::-webkit-scrollbar-thumb:active {
 }
 
 @media only screen and (max-width: 1000px) {
-    ul {
-        width: 70%;
+    ul{
+        width: 90%;
     }
 }
 
@@ -117,8 +118,6 @@ li {
 
 footer {
     font-family: 'Poppins', sans-serif;
-    position: fixed;
-    bottom: 0;
     left: 0;
     width: 100%;
     color: rgb(50, 50, 50);
