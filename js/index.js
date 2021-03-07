@@ -36,7 +36,7 @@ function refreshTodos() {
 
         deleteButton = document.createElement("button");
 
-        deleteButton.classList.add('delete-btn', 'material-icons');
+        deleteButton.classList.add('delete-btn', 'material-icons', 'right-align');
 
         buttonText = document.createTextNode("delete");
 
@@ -44,11 +44,17 @@ function refreshTodos() {
 
         deleteButton.setAttribute('onclick', `deleteTodo(${i})`);
 
-        todoElement.innerText = todos[i].todo;
+        todoName = document.createElement("div");
+
+        todoName.classList.add('todo-name')
+
+        todoName.innerText = todos[i].todo;
 
         if (todos[i].completed) {
-            todoElement.classList.add('completed');
+            todoName.classList.add('completed');
         }
+
+        todoElement.appendChild(todoName);
 
         todoElement.appendChild(deleteButton);
 

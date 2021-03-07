@@ -7,8 +7,8 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 70px;
     color: rgb(255, 167, 167, 0.7);
+    font-size: 70px;
 }
 
 form {
@@ -35,7 +35,7 @@ input:focus {
     outline: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 680px) {
     input {
         width: 90%;
     }
@@ -74,8 +74,8 @@ ul::-webkit-scrollbar-thumb:active {
     background-color: rgb(116, 116, 116);
 }
 
-@media only screen and (max-width: 1000px) {
-    ul{
+@media only screen and (max-width: 680px) {
+    ul {
         width: 90%;
     }
 }
@@ -89,14 +89,21 @@ li {
     margin-bottom: 10px;
     color: rgb(80, 80, 80);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.todo-name {
+    text-align: justify;
+    width: 500px;
 }
 
 .delete-btn {
     background-color: transparent;
     color: rgb(255, 167, 167, 0.7);
-    float: right;
     cursor: pointer;
     border: none;
+    margin: 5px;
 }
 
 .delete-btn:focus {
