@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     background-color: rgb(240, 240, 240);
+    min-height: 100vh;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 167, 167, 0.7);
     font-size: 70px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 form {
@@ -23,7 +32,6 @@ input {
     height: 35px;
     border: none;
     border-radius: 5px;
-    box-sizing: border-box;
     padding: 20px;
 }
 
@@ -125,8 +133,6 @@ li {
 
 footer {
     font-family: 'Poppins', sans-serif;
-    left: 0;
-    width: 100%;
     color: rgb(50, 50, 50);
 }
 
