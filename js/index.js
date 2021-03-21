@@ -88,6 +88,6 @@ function deleteTodo(index) {
 
 function saveTodos() {
 
-    localStorage.setItem('mytodos:todos', JSON.stringify(todos));
+    localStorage.setItem('my-todos:todos', JSON.stringify(todos));
 
 }
