@@ -1,4 +1,4 @@
-var todos = JSON.parse(localStorage.getItem("todos")) || [];
+var todos = JSON.parse(localStorage.getItem("my-todos:todos")) || [];
 
 const form = document.querySelector("form");
 
@@ -88,6 +88,6 @@ function deleteTodo(index) {
 
 function saveTodos() {
 
-    localStorage.setItem('todos', JSON.stringify(todos));
+    localStorage.setItem('mytodos:todos', JSON.stringify(todos));
 
 }
